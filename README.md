@@ -2,7 +2,7 @@
 
 A minimal FastAPI service that wraps a local Hugging Face text-classification model to detect spam messages. The model and tokenizer are stored in `spam_model/`, so the API runs fully offline.
 
-![Spam Detection Screenshot](Spam Detection.png)
+![Spam Detection UI](./Spam%20Detection.png)
 
 ## Requirements
 - Python 3.10+
