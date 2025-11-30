@@ -53,3 +53,11 @@ curl -X POST http://127.0.0.1:8000/predict \
 ## Development
 - Adjust thresholds or label mapping in `main.py` inside the `/predict` handler.
 - Regenerate or swap the model by replacing the files in `spam_model/` with a compatible text-classification checkpoint.
+
+## Project Story
+I built this as a beginner-friendly experiment to see how data, AI models, and APIs connect end-to-end:
+- Dataset: SMS Spam dataset from Hugging Face.
+- Model: DistilBERT fine-tuned with Python + PyTorch for lightweight spam/ham detection.
+- Serving: A small FastAPI endpoint (`POST /predict`) that responds in real time with `SPAM` or `NOT SPAM`.
+
+It is intentionally simple, but it helped me understand the full flow: prep data → train → save artifacts → serve via API → try live requests. If you are also learning AI and want to explore or collaborate, the code lives here: https://github.com/azimhossaintuhin/AI_spam_detector
